@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Classes | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <a href="index.html">
+      <img src="Yoga_assets_extracted/Yoga_c/yoga-logo_c.png"
+           alt="Riverbend Yoga Studio home" width="220">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Yoga Classes</a></li>
+        <li><a href="about.html">About Riverbend</a></li>
+        <li><a href="events.html">Workshops and Events</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Yoga for your pace and goals</h1>
+    <section aria-labelledby="finder-heading">
+      <h2 id="finder-heading">Find a class to start with</h2>
+      <p>Choose your experience and goal for a suggested starting point.
+        You can always ask an instructor about other options.</p>
+      <form id="class-finder">
+        <fieldset>
+          <legend>Your class preferences</legend>
+          <p>
+            <label for="finder-experience">Your yoga experience</label>
+            <select id="finder-experience" name="finder_experience">
+              <option value="new">New to yoga</option>
+              <option value="some">Some experience</option>
+              <option value="regular">Regular practice</option>
+              <option value="returning">Returning after a break</option>
+            </select>
+          </p>
+          <p>
+            <label for="finder-goal">What would you like from a class?</label>
+            <select id="finder-goal" name="finder_goal">
+              <option value="start">Learn the basics</option>
+              <option value="relax">Slow down and rest</option>
+              <option value="move">Build a flowing practice</option>
+              <option value="individual">Get individual guidance</option>
+            </select>
+          </p>
+          <button type="submit">Find a class</button>
+          <button type="button" id="forget-preferences">Forget saved choices</button>
+        </fieldset>
+      </form>
+      <div id="class-result" aria-live="polite" aria-atomic="true"></div>
+      <p id="preference-status" role="status"></p>
+      <noscript>Enable JavaScript to use the class finder. You can still
+        read all class descriptions below.</noscript>
+    </section>
+    <section aria-labelledby="classes-heading">
+      <h2 id="classes-heading">Class types</h2>
+      <h3>Gentle yoga</h3>
+      <p>Slow movement, basic poses, and time to explore variations make
+        this a welcoming option for beginners and older adults.</p>
+      <h3>Vinyasa yoga</h3>
+      <p>Link breath and movement in a flowing sequence. Ask about a
+        beginner option if you are new to moving between poses.</p>
+      <h3>Restorative yoga</h3>
+      <p>Settle into supported resting positions and leave room to unwind
+        after a busy week.</p>
+    </section>
+    <section aria-labelledby="private-heading">
+      <h2 id="private-heading">Private sessions</h2>
+      <p>Request individual instruction to discuss your goals, explore
+        modifications, or build confidence before joining a group.</p>
+    </section>
+    <section aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading">Pricing options</h2>
+      <ul>
+        <li>Drop-in: pay for one group class.</li>
+        <li>Class pass: purchase a bundle for regular group practice.</li>
+        <li>Private session: request an individual session quote.</li>
+        <li>Workshop: request the price for the specific monthly event.</li>
+      </ul>
+      <p>Ask for current rates and pass terms. No online checkout is required.</p>
+    </section>
+    <section aria-labelledby="breathing-heading">
+      <h2 id="breathing-heading">A short breathing pause</h2>
+      <p>Play two rounds of the provided guided breathing recording,
+        about 44 seconds in total. Pause whenever you need to.</p>
+      <audio controls preload="none" aria-label="Two rounds of guided breathing">
+        <source src="Yoga_assets_extracted/Yoga_c/yoga-breathing-two-rounds.mp3"
+                type="audio/mpeg">
+        Your browser does not support embedded audio.
+        <a href="Yoga_assets_extracted/Yoga_c/yoga-breathing-two-rounds.mp3">
+          Open the guided breathing recording</a>.
+      </audio>
+      <p><a href="Yoga_assets_extracted/Yoga_c/yoga-breathing-two-rounds.mp3">
+        Open or download the 44-second breathing recording</a>.</p>
+    </section>
+    <p><a href="events.html#interest-form">Ask about a class or private session</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio</p>
+    <a href="events.html#interest-form">Request class or workshop information</a>
+  </footer>
+</body>
+</html>

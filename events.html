@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops and Events | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <a href="index.html">
+      <img src="Yoga_assets_extracted/Yoga_c/yoga-logo_c.png"
+           alt="Riverbend Yoga Studio home" width="220">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Yoga Classes</a></li>
+        <li><a href="about.html">About Riverbend</a></li>
+        <li><a href="events.html" aria-current="page">Workshops and Events</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Monthly workshops and events</h1>
+    <p>Explore a focused practice with other students. Request a spot
+      to ask about dates, pricing, accessibility, and availability.</p>
+    <section aria-labelledby="monthly-heading">
+      <h2 id="monthly-heading">Monthly workshop list</h2>
+      <ul>
+        <li>November: Beginner Foundations, a gentle introduction to poses.</li>
+        <li>December: Rest and Restore, supported rest for a busy season.</li>
+        <li>January: Breath and Balance, mindful movement at your own pace.</li>
+      </ul>
+      <p>Exact dates and times are confirmed when you inquire.
+        An interest request does not reserve or charge for a place.</p>
+      <figure>
+        <img src="Yoga_assets_extracted/Yoga_c/yoga-workshop_c.png"
+             alt="Instructor guiding a group seated on yoga mats" width="480">
+        <figcaption>Monthly workshops offer space to learn together
+          and ask questions in a supportive group.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="request-heading">
+      <h2 id="request-heading">Request a spot</h2>
+      <p id="form-note">Complete this inquiry to check that it is ready to send.
+        This class project does not send messages or reserve a place.</p>
+      <p id="inquiry-preferences" role="status"></p>
+      <form id="interest-form" action="events.html#interest-form"
+            method="get" aria-describedby="form-note">
+        <p id="form-summary" class="form-message" role="alert" tabindex="-1" hidden></p>
+        <fieldset>
+          <legend>Your contact details</legend>
+          <p>
+            <label for="name">Full name (required)</label>
+            <input id="name" aria-describedby="name-error" name="name" type="text" autocomplete="name"
+                   required minlength="2" maxlength="80">
+            <span id="name-error" class="field-error" hidden></span>
+          </p>
+          <p>
+            <label for="email">Email address (required)</label>
+            <input id="email" aria-describedby="email-error" name="email" type="email"
+                   autocomplete="email" required maxlength="120">
+            <span id="email-error" class="field-error" hidden></span>
+          </p>
+          <p>
+            <label for="phone">Phone number (needed for phone replies)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel"
+                   pattern="[+]?[0-9 ]{7,20}" aria-describedby="phone-help phone-error">
+            <span id="phone-error" class="field-error" hidden></span>
+            <span id="phone-help">For a phone reply, enter 7 to 20 digits
+              or spaces, with an optional + at the start.</span>
+          </p>
+          <p>
+            <label for="contact-method">Preferred contact method (required)</label>
+            <select id="contact-method" aria-describedby="contact-method-error" name="contact_method" required>
+              <option value="">Choose a contact method</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+            <span id="contact-method-error" class="field-error" hidden></span>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Your practice and interests</legend>
+          <p>
+            <label for="interest">Class or event interest (required)</label>
+            <select id="interest" aria-describedby="interest-error" name="interest" required>
+              <option value="">Choose a class or workshop</option>
+              <option value="gentle">Gentle yoga</option>
+              <option value="vinyasa">Vinyasa yoga</option>
+              <option value="restorative">Restorative yoga</option>
+              <option value="private">Private session</option>
+              <option value="november">November Beginner Foundations</option>
+              <option value="december">December Rest and Restore</option>
+              <option value="january">January Breath and Balance</option>
+            </select>
+            <span id="interest-error" class="field-error" hidden></span>
+          </p>
+          <p>
+            <label for="experience">Experience level (required)</label>
+            <select id="experience" aria-describedby="experience-error" name="experience" required>
+              <option value="">Choose your experience level</option>
+              <option value="new">New to yoga</option>
+              <option value="some">Some experience</option>
+              <option value="regular">Regular practice</option>
+              <option value="returning">Returning after a break</option>
+            </select>
+            <span id="experience-error" class="field-error" hidden></span>
+          </p>
+          <p>
+            <label for="message">Message (required)</label>
+            <textarea id="message" aria-describedby="message-error" name="message" rows="5" cols="30"
+                      required minlength="10" maxlength="1000"></textarea>
+            <span id="message-error" class="field-error" hidden></span>
+          </p>
+        </fieldset>
+        <button type="submit">Check my inquiry</button>
+        <button type="reset">Clear form</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio</p>
+    <a href="events.html#interest-form">Request class or workshop information</a>
+  </footer>
+</body>
+</html>

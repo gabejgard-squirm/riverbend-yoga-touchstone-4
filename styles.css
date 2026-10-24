@@ -1,0 +1,251 @@
+/* Simple mobile-first styles shared by all four pages. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 2px solid #245b46;
+}
+
+header img {
+  display: block;
+  width: 160px;
+}
+
+nav {
+  background: #245b46;
+  padding: 8px 12px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 6px 2px;
+  color: #ffffff;
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration-thickness: 3px;
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #245b46;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p, ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+section {
+  margin-top: 28px;
+}
+
+a {
+  color: #245b46;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+a:focus-visible, input:focus-visible, select:focus-visible,
+textarea:focus-visible, button:focus-visible, audio:focus-visible {
+  outline: 3px solid #222222;
+  outline-offset: 3px;
+}
+
+nav a:focus-visible {
+  outline-color: #ffffff;
+}
+
+body > a {
+  display: inline-block;
+  margin: 8px 20px;
+}
+
+img, audio {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+figure {
+  margin: 16px 0;
+}
+
+figcaption {
+  max-width: 480px;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #245b46;
+}
+
+legend, label {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input, select, textarea, button {
+  font: inherit;
+}
+
+input, select, textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid #245b46;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#phone-help {
+  display: block;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid #245b46;
+  background: #245b46;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background: #eeeeee;
+  color: #222222;
+}
+
+footer {
+  margin-top: 32px;
+  border-top: 2px solid #245b46;
+  background: #eeeeee;
+}
+
+.home-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Larger screens get horizontal navigation and two-column content. */
+@media (min-width: 48rem) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  header, main, footer {
+    padding: 28px;
+  }
+
+  .home-layout {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+  }
+
+  .home-layout > h1, .home-layout > p {
+    flex-basis: 100%;
+  }
+
+  .home-layout > section {
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  fieldset {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+/* Plain feedback for the Touchstone 4 interactive features. */
+[hidden] { display: none !important; }
+.field-error { display: block; margin-top: 4px; font-weight: bold; }
+[aria-invalid="true"] { border: 2px solid #222222; }
+.form-message { flex-basis: 100%; margin: 0; font-weight: bold; }
+#class-result { margin-top: 20px; }
+#class-result h3 { margin-top: 0; }
+#forget-preferences { background: #eeeeee; color: #222222; }
+#preference-status, #inquiry-preferences { font-size: 1rem; }
