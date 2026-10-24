@@ -2,7 +2,7 @@
 
 This repository contains the Touchstone 4 version of the Riverbend Yoga Studio coursework website. It builds on the earlier HTML and CSS website by adding a class finder, form validation, and browser storage. It uses four HTML pages, one shared CSS file, and one JavaScript file.
 
-Touchstone 3 remains in the separate riverbend-yoga repository.
+The HTML and CSS version remains in the separate [Touchstone 3 repository](https://github.com/gabejgard-squirm/riverbend-yoga). You can also [view the Touchstone 3 website](https://gabejgard-squirm.github.io/riverbend-yoga/).
 
 Public website: https://gabejgard-squirm.github.io/riverbend-yoga-touchstone-4/
 
@@ -41,3 +41,4 @@ Public website: https://gabejgard-squirm.github.io/riverbend-yoga-touchstone-4/
 - `Yoga_assets_extracted/Yoga_c/`: provided images and breathing audio
 
 The form is a client-side coursework demonstration. It validates inquiries but does not send messages, take payments, or reserve places.
+
